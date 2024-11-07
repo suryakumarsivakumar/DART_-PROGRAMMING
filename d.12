@@ -1,0 +1,17 @@
+void main() {
+  Set mySet = {1,2,3,3,4};
+  print(mySet);
+  
+  Set myAnotherSet = Set();
+  print(myAnotherSet);
+  
+  myAnotherSet.add("hello");
+  print(myAnotherSet);
+  
+  myAnotherSet.addAll({1,2,3,3});
+  print(myAnotherSet);
+  
+  myAnotherSet.clear();
+  print(myAnotherSet);
+  }
+ 
