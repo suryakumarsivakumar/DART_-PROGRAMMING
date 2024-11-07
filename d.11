@@ -1,0 +1,29 @@
+void main() {
+  Map myMap1 = {
+    "name" : "Avinash",
+      "age" : 18
+  };
+  
+  print(myMap1);
+  
+  Map <String,String> myMap2 ={
+    "place":"chennai"
+  };
+  print(myMap2);
+  
+  
+  Map myAnotherMap = Map();
+  print(myAnotherMap);
+  
+  print(myMap1.keys);
+  print(myMap1.values);
+  print(myMap1.length);
+  
+  myMap1.addAll({
+    "isValid":true,
+    "isNotValid":false
+  });
+  
+  print(myMap1);
+  }
+ 
