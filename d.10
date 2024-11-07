@@ -1,0 +1,14 @@
+void main() {
+  List myList=[1,2,"String",true];
+  List<int> integerList =[1,2,3];
+  List myAnotherList = List.empty(growable:true);
+  print(myAnotherList);
+  myAnotherList.add(1);
+  print(myAnotherList);
+  myAnotherList.removeAt(0);
+  print(myAnotherList);
+  myList.add("String");
+  print(myList);
+  print(integerList);
+  print(myList.length);
+  }
