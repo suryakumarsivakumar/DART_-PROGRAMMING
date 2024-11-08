@@ -1,0 +1,8 @@
+void main(){
+  person("surya",20);
+}
+
+void person(name, age){
+  print(name);
+  print(age);
+}
