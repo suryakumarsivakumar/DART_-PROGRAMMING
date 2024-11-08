@@ -1,0 +1,12 @@
+void main(){
+  person("surya",20,true);
+  
+  person("ragu",19,false);
+}
+
+void person(name, age,[isEmployed=false]){
+  print(name);
+  print(age);
+  print(isEmployed);
+}
+
