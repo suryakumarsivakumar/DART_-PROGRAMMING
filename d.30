@@ -1,0 +1,10 @@
+class A{
+  static String name = "Avinash";
+  static void hello(){
+    print("hello...");
+  }
+}
+void main() {
+  A.hello();
+  print(A.name);
+}
