@@ -1,0 +1,21 @@
+mixin A{
+   void aPrint(){
+     print("print A");
+   }
+}
+
+class B with A{
+  void bPrint(){
+    aPrint();
+    print("print B");
+  }
+}
+
+void main() {
+  B b = B();
+  b.bPrint();
+}
+
+
+print A
+print B
