@@ -1,0 +1,28 @@
+class Parent{
+  String parentName = "Parent";
+  void parentMethod(){
+    print("im a parent");
+    
+  }
+}
+class Child extends Parent{
+  String childName= " child";
+  @override
+  void parentMethod(){
+    print("i am not a parent");
+  }
+  
+  void ChildMethod(){
+    print("iam a child");
+  }  
+}
+
+void main() {
+Child child = Child();
+  print(child.parentName);
+  child.parentMethod();
+  
+}
+
+Parent
+i am not a parent
