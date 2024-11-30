@@ -1,0 +1,22 @@
+class Person{
+  String name;
+  
+  Person({required this.name}){
+    print("running");
+
+  }
+  void sayName(){
+    print(this.name);
+  }
+}
+
+
+void main() {
+  Person person = Person(name:"surya");
+  person.sayName();
+ 
+}
+
+
+running
+surya
