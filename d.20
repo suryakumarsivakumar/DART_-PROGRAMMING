@@ -1,0 +1,20 @@
+class Person{
+  String name = "TOP";
+  void hello(){
+    print("i am from class");
+  }
+}
+
+
+void main() {
+  Person person = Person();
+  print(person);
+  print(person.name);
+  person.hello();
+  
+}
+
+
+Instance of 'Person'
+TOP
+i am from class
