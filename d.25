@@ -1,0 +1,43 @@
+class Person{
+  String firstname;
+  String lastname;
+  int age;
+  bool isemployed;
+  int ?_birthYear;
+  
+  
+  String get fullname => this.firstname+this.lastname;
+  
+  void set birthYear(int currentYear){
+    _birthYear = currentYear - age;
+  }
+  
+  
+  
+  Person(String fname,String lname,int age,bool isemployed)
+    :this.firstname=fname,
+    this.lastname=lname,
+    this.age=age,
+    this.isemployed=isemployed;
+    
+
+  void sayHello(String name){
+  print("hello "+name);
+}
+
+}
+
+
+void main() {
+  Person person = Person("surya","kumar",19,true);
+  person.sayHello("krishna");
+  print(person.fullname);
+  person.birthYear= 2024;
+  print(person._birthYear);
+  
+  
+}
+
+hello krishna
+suryakumar
+2005
