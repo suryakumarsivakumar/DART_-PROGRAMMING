@@ -1,0 +1,26 @@
+class Person{
+  String name;
+  int? age;
+  
+  Person({required this.name}){
+    print("running");
+
+  }
+  
+  Person.age({required this.age}):name="surya";
+  
+  
+  void sayName(){
+    print(this.name);
+  }
+}
+
+
+void main() {
+  Person person = Person(name:"surya");
+  person.sayName();
+  Person surya = Person.age(age:21);
+  
+  print(surya.age);
+ 
+}
