@@ -1,0 +1,14 @@
+enum gender{
+  Male,
+  Female,
+  Others
+}
+
+void main() {
+  print(gender.values);
+  
+}
+
+
+
+[gender.Male, gender.Female, gender.Others]
