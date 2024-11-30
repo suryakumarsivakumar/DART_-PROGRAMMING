@@ -1,0 +1,27 @@
+class Person{
+  String firstname;
+  String lastname;
+  int age;
+  bool isemployed;
+  
+  
+  Person(String fname,String lname,int age,bool isemployed)
+    :this.firstname=fname,
+    this.lastname=lname,
+    this.age=age,
+    this.isemployed=isemployed;
+
+  void sayHello(String name){
+  print("hello "+name);
+}
+
+}
+
+
+void main() {
+  Person person = Person("surya","kumar",21,true);
+  person.sayHello("krishna");
+}
+
+
+hello krishna
