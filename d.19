@@ -1,0 +1,15 @@
+class Person{
+  String name = "TOP";
+}
+
+
+void main() {
+  Person person = Person();
+  print(person);
+  print(person.name);
+  
+}
+
+
+Instance of 'Person'
+TOP
