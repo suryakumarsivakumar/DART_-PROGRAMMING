@@ -1,0 +1,13 @@
+void main(){
+String somevalue = 'hi!';
+  int age = 20;
+  
+  switch(somevalue){
+    case "hi!" when age>=20:  // when is a operator that checks if the conditions meets or not
+    print("yoo!");
+  case "hi!!":
+    print("wow");
+  default:
+    print("nahh");
+  }     
+}
