@@ -1,0 +1,28 @@
+String? somevalue;
+  
+
+void main() {
+  // optional variables
+  //int,string,bool and null
+  
+ // ! - cannit be null
+ // ? - can be null and if null print null 
+ // ?? - it means it is null and it will print any number or string after it in the console
+  
+  print(somevalue);
+  
+  somevalue = 'hello';
+  
+  print(somevalue);
+  
+  somevalue = null;
+  print(somevalue?.length);
+  
+  print(somevalue?.length??0);
+}
+
+
+null
+hello
+null
+0
