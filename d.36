@@ -1,0 +1,16 @@
+void main() {
+  var (age,name,isAdult,job) = printDetails();
+  print(age);
+  print(name);
+  print(isAdult);
+  print(job);
+} 
+(int,String,bool,String )printDetails(){
+  return(18,"Surya",true,"app developer");
+}
+
+
+18
+Surya
+true
+app developer
