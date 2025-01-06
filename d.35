@@ -1,0 +1,22 @@
+void main() {
+  var details = printDetails();
+  print(details);
+  print(details.$1);
+  print(details.$2);
+  print(details.$3);
+  print(details.$4);
+  print(details.$1.isEven);
+  print(details.$2.runtimeType);
+}
+(int,String,bool,String )printDetails(){
+  return(18,"Surya",true,"app developer");
+}
+
+
+(18, Surya, true, app developer)
+18
+Surya
+true
+app developer
+true
+String
