@@ -1,0 +1,15 @@
+void main() {
+  final stuff = printStuff();
+  
+ print(stuff.age);
+ print(stuff.name);
+  
+  
+}
+({int age, String name})printStuff(){
+  return (age:18,name:"Surya");
+}
+
+
+18
+Surya
