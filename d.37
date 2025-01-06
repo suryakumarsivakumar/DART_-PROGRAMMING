@@ -1,0 +1,17 @@
+  final stuff = printStuff();
+  
+  stuff();
+  (){
+    print("yooo");
+  }();
+  
+  
+}
+Function printStuff(){
+  return (){
+    print("yoooo");
+  };
+}
+
+yoooo
+yooo
