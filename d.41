@@ -1,0 +1,14 @@
+void main() {
+  print(Constants.greeting);
+  print(Constants.bye); 
+  
+}
+
+ class Constants{
+   static String greeting="hello how are you?";
+   static String bye="bye";
+   // the static variable allows us to create variable that can be asscessed without creating an instance which saves us memery as creating an instance requires memory.
+ }
+
+hello how are you?
+bye
