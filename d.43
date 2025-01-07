@@ -1,0 +1,38 @@
+void main() {
+  
+  Vehicle car = Car();
+  print((car as Car).noOfWheels);
+  
+  dynamic someValue = 10;
+  print((someValue as int).runtimeType);
+  
+}
+
+ class Vehicle {
+   int speed =10;
+   bool isEngineStarted = true;
+   bool isLightsOn = true;
+   
+   
+   int accelerate(){
+     return speed+=10;
+   }
+   }
+
+class Car extends Vehicle{
+  int noOfWheels = 4;
+  
+}
+
+class Truck extends Vehicle{
+  int noOfWheel = 8;
+}
+
+// here we created sn instance called car of the datatype Vehicle and of the class car and when we try to access a variable in the car which is not in the vehicle it will show an error.
+// So we use "as" keyword and we assigned it to Car class now we can access the noOfWheels variable from the class Car
+
+// similarly we created a variable called somevalue of type dynamic and converted it's type to int using 'as' keyword
+
+
+4
+int
