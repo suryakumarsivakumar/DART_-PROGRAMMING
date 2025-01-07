@@ -1,0 +1,45 @@
+void main() {
+  
+  Car car = Car();
+  car.accelerate();
+  print(car.speed);
+  
+  
+}
+
+class SomeClass{
+  int speed = 25;
+  
+  void accelerate(){
+    speed+=30;
+  }
+  
+}
+
+ class Vehicle extends SomeClass{
+   bool isEngineStarted = true;
+   bool isLightsOn = true;
+   
+   @override
+   int accelerate(){
+     return speed+=10;
+   }
+   }
+
+class Car extends Vehicle{
+  int noOfWheels = 4;
+  
+}
+
+class Truck extends Vehicle{
+  int noOfWheel = 8;
+}
+
+
+// here we use "@override " as we overriding the function accelerate from the someclass in the vehicle class.
+
+// In dart we cant inheret from multiple class but we can inheret from a class which is inheret from another class 
+
+o/p:
+
+35
