@@ -1,0 +1,20 @@
+void main() {
+  
+  print(Constants.returnHeight()); 
+  
+}
+
+ class Constants{
+   static int height = 10;
+   
+   static int returnHeight(){
+     return height;
+   }
+   
+   
+   /* 1.the static function allows us to create function that can be asscessed without creating an instance which saves us memery as creating an instance requires memory.
+    2. Only static variable can be used inside the static function.*/
+ }
+
+
+10
