@@ -1,0 +1,46 @@
+void main() {
+  
+  Car car = Car();
+  print(car.speed);
+  car.accelerate();
+  print(car.isLightsOn);
+  
+  
+}
+
+class SomeClass{
+  int speed = 25;
+  
+  void accelerate(){
+    speed+=30;
+    print(speed);
+  }
+  
+}
+
+ class Vehicle {
+   bool isEngineStarted = true;
+   bool isLightsOn = true;
+   
+   }
+
+class Car extends SomeClass implements Vehicle{
+  @override
+  bool isEngineStarted = false;
+  @override
+  bool isLightsOn = true;
+  var speed = 45;
+  int noOfWheels = 4;
+  
+}
+
+/* extends - we can use the contents in the other class with it.
+ * implements - we have to explicitly override each and every content in the implemented class 
+ * In this code we have used both implements and extends in the class and we cannot implement and extend the same class like ( class car implements someclass extends someclass) like this we cannot do */
+
+
+
+o/p:
+45
+75
+true
