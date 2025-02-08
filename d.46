@@ -1,0 +1,24 @@
+void main() {
+ Car car = Car();
+  print(car.noOfWheels);
+}
+
+abstract class Vehicle{
+  void accelerate();
+  int? noOfWheels;
+}
+
+class Car implements Vehicle{
+  @override
+  void accelerate(){
+    print("car is accelerating");
+  }
+  @override
+  int? noOfWheels = 4;
+}
+
+
+output:
+4
+
+//abstract class :- this is the type of class that we cannot create an instance of it and we can create variable and functions without defining it within that class.
