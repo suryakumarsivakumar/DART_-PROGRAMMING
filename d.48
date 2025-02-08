@@ -1,0 +1,33 @@
+void main() {
+  Animal animal1 = Cat();
+  animal1.sound();
+  Animal animal2 = Dog();
+  animal2.sound();
+ 
+}
+
+abstract class Animal{
+  void sound();
+  
+}
+
+class Cat extends Animal{
+  @override
+  void sound(){
+  print("cat making soound");}
+}
+
+class Dog extends Animal{
+  @override
+  void sound(){
+  print("dog making soound");}
+}
+
+output:
+cat making soound
+dog making soound
+
+//ABSTRACTION :- abstraction is rocess of hiding the internal details and complexity of an object and  exposing only essential details and functionalities.
+
+//we cannot instance the animal class as it a abstract class.
+
