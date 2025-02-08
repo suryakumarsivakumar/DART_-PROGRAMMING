@@ -1,0 +1,34 @@
+void main() {
+  Animal cat = Cat();
+  cat.sound();
+  cat=Dog();
+  cat.sound();
+ 
+}
+
+class Animal{
+  void sound(){
+    print("animal making sound");
+  }
+  
+}
+
+class Cat extends Animal{
+  @override
+  void sound(){
+  print("cat making soound");}
+}
+
+class Dog extends Animal{
+  @override
+  void sound(){
+  print("dog making soound");}
+}
+
+
+cat making soound
+dog making soound
+
+
+//POLYMORPHISM:-  polymorphism helps an object to take different kind of forms for eg., the object cat first assigned to the Cat class and it prints " cat making sound"  and then the same object is assigned to the Dog class and it prints " dog making sound".
+// it does this with the help of inheritance and method overriding.
