@@ -1,0 +1,42 @@
+void main() {
+  
+  List<Student> students=[Student('surya',40),
+                         Student('karthi',30),
+                         Student('muruga',20),
+                         Student('shiva',10)];
+  
+  
+  
+ print(students); 
+  
+ 
+  
+  List<Student> filteredStudents = [];
+  
+  for(final student in students){
+    if(student.marks>=20){
+      filteredStudents.add(student);
+  }
+  }
+  print(filteredStudents);
+} 
+
+
+  
+  class Student{
+    final String name;
+    final int marks;
+    Student(this.name,this.marks);
+    
+    
+
+    @override
+    String toString() => 'Student:$name';
+  }
+
+
+output:
+[Student:surya, Student:karthi, Student:muruga, Student:shiva]
+[Student:surya, Student:karthi, Student:muruga]
+
+// to filter the elemets we can also use the "for in " loop like the above , and we can also use Student insted of final to declare the datatype for the student variable in the "for in " loop.
