@@ -1,0 +1,14 @@
+void main() {
+ Map<String,int> marks = {
+   'Rivaan':10,
+   'Naman':15,
+   'Other Kid': 30
+ };
+  
+  print(marks['Rivaan']);
+}
+  
+ output:
+ 10
+
+ // Map: in map we use the keyword to call the element and we use curly brackets"{}".
