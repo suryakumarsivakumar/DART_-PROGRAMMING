@@ -1,0 +1,41 @@
+void main() {
+ Map<String,int> marks1 = {
+   'Rivaan':10,
+   'Naman':15,
+   'Other Kid': 30
+ };
+  
+  List<Map<String,int>> marks = [marks1,
+                                {
+                                  'Rivaan' : 15,
+                                  'Naman' : 20,
+                                  'Other Kid' : 25
+
+                                },
+                                {
+                                                                                         'Rivaan' : 20,
+                                  'Naman' : 25,
+                                  'Other Kid' : 25
+
+                                  
+                                }];
+  marks.map((e){
+         e.forEach((key,val){
+           print('$key: $val');
+         }) ; 
+            }).toList();
+  
+}
+
+output:
+Rivaan: 10
+Naman: 15
+Other Kid: 30
+Rivaan: 15
+Naman: 20
+Other Kid: 25
+Rivaan: 20
+Naman: 25
+Other Kid: 25
+
+// here we used the foreach loop to print the results.
