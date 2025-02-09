@@ -1,0 +1,43 @@
+void main() {
+  
+  final employee1 = Employee('surya',EmployeeType.swe);
+  final employee2 = Employee('karthi',EmployeeType.finance);
+  final employee3 = Employee('surya',EmployeeType.marketing);
+  
+  employee1.fn();
+  employee2.fn();
+}
+
+
+enum EmployeeType{
+  swe,
+  finance,
+  marketing
+}
+
+class Employee{
+ final String name;
+  final EmployeeType type;
+  
+  Employee(this.name,this.type);
+  
+  void fn(){
+    switch(type){
+    case EmployeeType.swe:
+      print("software engineer");
+    case EmployeeType.finance:
+      print("finance");
+      case EmployeeType.marketing:
+        print("marketing");
+      
+        }
+  }
+}
+
+
+output:
+software engineer
+finance
+
+
+// here we use enum so that the user can only enter the pre-existed job roles in the company and he cannot enter some random job roles. by enum we can also avoid spelling mistake as we are using the same values in the all over our program by calling it again and again.
