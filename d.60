@@ -1,0 +1,39 @@
+void main() {
+  
+  List<Student> students=[Student('surya',40),
+                         Student('karthi',30),
+                         Student('muruga',20),
+                         Student('shiva',10)];
+  
+  
+  
+ print(students); 
+  
+  var filteredStudents= students.where((student)=> student.marks>=20);
+  
+print(filteredStudents);
+  
+  
+print (filteredStudents.toList());
+}
+
+  
+  class Student{
+    final String name;
+    final int marks;
+    Student(this.name,this.marks);
+    
+    
+
+    @override
+    String toString() => 'Student:$name';
+  }
+
+
+output:
+[Student:surya, Student:karthi, Student:muruga, Student:shiva]
+(Student:surya, Student:karthi, Student:muruga)
+[Student:surya, Student:karthi, Student:muruga]
+
+
+// here to filter the elements we use the where method and with the help of itwe give the condition and it will return the output in the iterable format and we printed it and with the help of toList() method we convert it to the list format and we again printed it.
