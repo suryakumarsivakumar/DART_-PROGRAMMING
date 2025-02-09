@@ -1,0 +1,35 @@
+void main() {
+  
+  List<Student> students=[Student('surya'),
+                         Student('karthi'),
+                         Student('muruga'),
+                         Student('shiva')];
+  
+  
+  
+  final student = students[0];
+  print(student.name);
+  
+  students[3]= Student("new kid");
+  
+  print(students);
+  
+  
+} 
+  
+  class Student{
+    final String name;
+    
+    Student(this.name);
+    
+    
+
+    @override
+    String toString() => 'Student:$name';
+  }
+
+output:
+surya
+[Student:surya, Student:karthi, Student:muruga, Student:new kid]
+
+// this is how we can update something in the list and we can see the fourth element in the list is changed.
