@@ -1,0 +1,35 @@
+void main() {
+ Animal animal = Cat();
+ 
+  
+  switch(animal){
+    case Dog():
+      print("dog");
+      break;
+    case Cat():
+      print("cat");
+      break;
+    case Human():
+      print("human");
+      break;
+  }
+}
+
+
+sealed class Animal{}
+
+
+class Cat implements Animal {}
+
+class Dog implements Animal{}
+
+class  Human extends Animal{}
+
+
+class Human1 implements Human{}
+
+output:
+cat
+
+
+SEALED CLASS:- it is restricted to the same file , and we cannot create a instance for it.
