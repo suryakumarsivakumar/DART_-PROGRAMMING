@@ -1,0 +1,23 @@
+void main() {
+ Map<String,int> marks = {
+   'Rivaan':10,
+   'Naman':15,
+   'Other Kid': 30
+ };
+  
+  //add a new value
+  marks['kumar'] = 40;
+  print(marks);
+  
+  // update the old value
+  marks['Naman'] = 20;
+  print(marks);
+  
+}
+
+output:
+{Rivaan: 10, Naman: 15, Other Kid: 30, kumar: 40}
+{Rivaan: 10, Naman: 20, Other Kid: 30, kumar: 40}
+
+
+// two keys in the map cannot be the same.
