@@ -1,0 +1,42 @@
+void main() {
+  
+  List<Student> students=[Student('surya'),
+                         Student('karthi'),
+                         Student('muruga'),
+                         Student('shiva')];
+  
+  
+  
+ print(students); 
+  
+  dynamic student = students[2];
+  print(student.name);
+  
+  
+  students.removeAt(2);
+  
+  print(students);
+  
+  student = students[2];
+  print(student.name);
+  
+} 
+  
+  class Student{
+    final String name;
+    
+    Student(this.name);
+    
+    
+
+    @override
+    String toString() => 'Student:$name';
+  }
+
+output:
+[Student:surya, Student:karthi, Student:muruga, Student:shiva]
+muruga
+[Student:surya, Student:karthi, Student:shiva]
+shiva
+
+// this is how we remove an element from the list we can use the removeAt() method by giving one parameter as index of the element to be removed.
