@@ -1,0 +1,38 @@
+void main() {
+  
+  List<Student> students=[Student('surya'),
+                         Student('karthi'),
+                         Student('muruga'),
+                         Student('shiva')];
+  
+  
+  
+  
+  
+  students.add(Student('New kid'));
+  
+  print(students);
+  
+  final student = students[4];
+  print(student.name);
+  
+} 
+  
+  class Student{
+    final String name;
+    
+    Student(this.name);
+    
+    
+
+    @override
+    String toString() => 'Student:$name';
+  }
+
+
+output:
+[Student:surya, Student:karthi, Student:muruga, Student:shiva, Student:New kid]
+New kid
+
+
+// this is how we can add a element at the back of the list
