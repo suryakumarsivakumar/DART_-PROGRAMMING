@@ -1,0 +1,33 @@
+void main() {
+ Map<String,int> marks1 = {
+   'Rivaan':10,
+   'Naman':15,
+   'Other Kid': 30
+ };
+  
+  List<Map<String,int>> marks = [marks1,
+                                {
+                                  'Rivaan' : 15,
+                                  'Naman' : 20,
+                                  'Other Kid' : 25
+
+                                },
+                                {
+                                  'Rivaan' : 20,
+                                  'Naman' : 25,
+                                  'Other Kid' : 25
+
+                                  
+                                }];
+  marks.map((e){
+         print(e);  
+            }).toList();
+  
+}
+
+output:
+{Rivaan: 10, Naman: 15, Other Kid: 30}
+{Rivaan: 15, Naman: 20, Other Kid: 25}
+{Rivaan: 20, Naman: 25, Other Kid: 25}
+
+//here we create a list of maps like the marks of the students in different tests and we are able to store it.
