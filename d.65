@@ -1,0 +1,19 @@
+void main() {
+ Map<String,int> marks = {
+   'Rivaan':10,
+   'Naman':15,
+   'Other Kid': 30
+ };
+  
+  marks.forEach((key,val){
+    print('$key : $val');
+  });
+}
+
+
+  output:
+Rivaan : 10
+Naman : 15
+Other Kid : 30
+
+//here we use the forEach predefined method to print the elements of the map.
