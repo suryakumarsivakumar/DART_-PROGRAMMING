@@ -1,0 +1,42 @@
+void main() {
+  
+  List<Student> students=[Student('surya',40),
+                         Student('karthi',30),
+                         Student('muruga',20),
+                         Student('shiva',10)];
+  
+  
+  
+ print(students); 
+  
+ 
+  
+  List<Student> filteredStudents = [];
+  
+  for(int i=0;i<students.length;i++){
+    if(students[i].marks>=20){
+      filteredStudents.add(students[i]);
+    }
+  }
+  print(filteredStudents);
+} 
+
+
+  
+  class Student{
+    final String name;
+    final int marks;
+    Student(this.name,this.marks);
+    
+    
+
+    @override
+    String toString() => 'Student:$name';
+  }
+
+
+output:
+[Student:surya, Student:karthi, Student:muruga, Student:shiva]
+[Student:surya, Student:karthi, Student:muruga]
+
+// this is how we filter what we want from the list using the for loop and the if condition.
