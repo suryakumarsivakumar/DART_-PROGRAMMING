@@ -1,0 +1,31 @@
+void main() {
+  
+  // exception handling
+  
+  print(10~/3);
+  
+  print(10/0);
+  
+  try { 
+  print(10~/0);
+  }catch(e)
+  {
+    print(e);
+  }finally{
+    print(" i will always get printed.");
+  }
+  
+  print("surya");
+}
+
+output:
+3
+Infinity
+Unsupported operation: Infinity
+ i will always get printed.
+surya
+
+
+// in the exception handing we use try block to try the statement that we have doubt that it will produce some exception and in the catch block we will catch the exception .
+// the catch block is must if we write try block
+// the finally block is not necessary and whatever we put in the finally block it will always executed.
