@@ -1,0 +1,15 @@
+void main() {
+ Map<String,int> marks = {
+   'Rivaan':10,
+   'Naman':15,
+   'Other Kid': 30
+ };
+  print(marks);
+  //to remove a value
+  marks.remove('Rivaan');
+  print(marks);
+}
+  
+output:
+{Rivaan: 10, Naman: 15, Other Kid: 30}
+{Naman: 15, Other Kid: 30}
