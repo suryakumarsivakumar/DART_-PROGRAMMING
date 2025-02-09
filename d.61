@@ -1,0 +1,44 @@
+void main() {
+  final shiva = Student('shiva',10);
+  List<Student> studentsList=[Student('surya',40),
+                         Student('karthi',30),
+                         Student('muruga',20),
+                         shiva,
+                         shiva,
+                         shiva,
+                         shiva];
+  
+  
+ Set<Student> studentsSet={Student('surya',40),
+                         Student('karthi',30),
+                         Student('muruga',20),
+                         shiva,
+                         shiva,
+                         shiva,
+                         shiva};
+  
+ print(studentsList); 
+ print(studentsSet);
+ print(studentsList.toSet());
+
+}
+  
+  class Student{
+    final String name;
+    final int marks;
+    Student(this.name,this.marks);
+    
+    
+
+    @override
+    String toString() => 'Student:$name';
+  }
+
+output:
+[Student:surya, Student:karthi, Student:muruga, Student:shiva, Student:shiva, Student:shiva, Student:shiva]
+{Student:surya, Student:karthi, Student:muruga, Student:shiva}
+{Student:surya, Student:karthi, Student:muruga, Student:shiva}
+
+
+// here we use the set which is similar to the list but it remove all the duplicates and it is denoted in curly brackets "{}".
+//we can convert a list to a set using "toSet()" method.
