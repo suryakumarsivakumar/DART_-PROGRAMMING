@@ -1,0 +1,38 @@
+void main() {
+  
+  final employee1 = Employee('surya',EmployeeType.swe);
+  final employee2 = Employee('karthi',EmployeeType.finance);
+  final employee3 = Employee('surya',EmployeeType.marketing);
+  
+  employee1.fn();
+  employee2.fn();
+}
+
+
+enum EmployeeType{
+  swe(200000),
+  finance(200005),
+  marketing(300000);
+    
+  final int salary;
+  
+  const EmployeeType(this.salary);
+}
+
+class Employee{
+ final String name;
+  final EmployeeType type;
+  
+  Employee(this.name,this.type);
+  
+  void fn(){
+    
+    print('${type.name},${type.salary}');
+  }
+}
+
+output:
+swe,200000
+finance,200005
+
+// here we create a constructor within the enum and we fixed salaries for the job roles and we printed it .
