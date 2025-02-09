@@ -1,0 +1,27 @@
+void main() {
+  
+  List<Student> students=[Student('surya'),
+                         Student('karthi'),
+                         Student('muruga'),
+                         Student('shiva')];
+  
+  final student = students[0];
+  print(student.name);
+  
+  
+  
+  
+} 
+  
+  class Student{
+    final String name;
+    
+    Student(this.name);
+  
+}
+
+
+output:
+surya
+
+// here we create a list of students with the type that we created from the class called Student.
