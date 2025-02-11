@@ -1,0 +1,28 @@
+void main() async {
+  print(giveResultAfter2Second());
+  final result = await giveResultAfter2Second();
+  
+  print(result);
+  print("helllo wrold!");
+  print("my name is surya");
+  
+}
+
+
+Future<String> giveResultAfter2Second(){
+  return Future((){
+    return 'hey!!!!!';
+  });
+  
+}
+
+output:
+Instance of '_Future<String>'
+hey!!!!!
+helllo wrold!
+my name is surya
+
+
+//here the async means we are executing all the other statement in our program without waiting for th execution of some statements and their results.
+//in the first print statement it prints as "Instance of '_Future<String>'" and from that we know that the future is a class and it used to async the program
+//in the void main we use async and in the third line we await which waits until the program executes and gets the output and store it in the result variable.
