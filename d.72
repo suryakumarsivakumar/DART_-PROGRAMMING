@@ -1,0 +1,27 @@
+void main() async {
+  
+  print("hello");
+  final result = await giveResultAfter2Second();
+  
+  print(result);
+  print("helllo wrold!");
+  print("my name is surya");
+  
+}
+
+
+Future<String> giveResultAfter2Second(){
+  return Future.delayed(Duration(seconds:2),() async{
+    return 'hey!!!!!';
+  });
+  
+}
+
+output:
+hello
+hey!!!!!
+helllo wrold!
+my name is surya
+
+// here we use the delayed function which delays the output and also we use the duration and we gave 2 seconds for the delay .
+// the first print statement will print hello after two seconds only the hey!!!! will get printed.
