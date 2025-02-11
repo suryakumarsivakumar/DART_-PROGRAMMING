@@ -1,0 +1,28 @@
+void main() {
+  
+  print("hello");
+  giveResultAfter2Second().then((val){
+    print(val);
+  });
+  print("helllo wrold!");
+  print("my name is surya");
+  
+}
+
+
+Future<String> giveResultAfter2Second(){
+  return Future.delayed(Duration(seconds:2),() async{
+    return 'hey!!!!!';
+  });
+  
+}
+
+output:
+hello
+helllo wrold!
+my name is surya
+hey!!!!!
+
+
+//whenever we have a future(), we can use the then() and it allows us to execute the other statements in our program without waiting for the future ().
+// here then is used and all the print statments are executed and after that only the future function with a 2 seconds delay is executed i.e., "hey!!!!".
