@@ -1,0 +1,9 @@
+void main (){
+  final records = (4,5,"hi",2);
+  print(records.$2);
+}
+
+output:
+5
+
+//this is the records and we use "$" to retrive the elements from the records.
