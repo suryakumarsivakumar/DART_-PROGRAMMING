@@ -1,0 +1,12 @@
+void main (){
+  (int,int)? records = (4,5);
+  print(records);
+  records = null;
+  print(records);
+}
+
+output:
+(4, 5)
+null
+
+//we can also use the initialise null to the records.
