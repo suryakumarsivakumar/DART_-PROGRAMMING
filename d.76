@@ -1,0 +1,36 @@
+import 'dart:async';
+
+void main() async {
+  
+  countDown();
+}
+
+
+void  countDown() {
+  final controller = StreamController<int>();
+  
+  controller.sink.add(1);
+  controller.sink.add(2);
+  controller.sink.add(3);
+  controller.sink.add(4);
+  controller.sink.add(5);
+  controller.sink.addError("hi my name is error");
+  controller.stream.listen((val){
+    print(val);
+    
+  }, onError: (err){
+    print(err);
+  });
+  
+  controller.close();
+  
+}
+
+output:
+1
+2
+3
+4
+5
+
+//here we created a object called controller with the StreamController class 
