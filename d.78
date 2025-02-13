@@ -1,0 +1,12 @@
+void main (){
+  final records = (4,5,greeting:"hi",age:12);
+  print(records.greeting);
+  print(records.age);
+}
+output:
+hi
+12
+
+
+//we can also name the elemnts and call by its name
+// here we call the "hi" by the greeting.
