@@ -1,0 +1,26 @@
+void main() async {
+  
+  countDown().listen((val){
+    print(val);
+  });
+  
+}
+
+
+Stream<int> countDown() async*{
+  for(int i=5;i>0;i--){
+    yield i;
+    await Future.delayed(Duration(seconds: 1));
+  }
+}
+
+output:
+5
+4
+3
+2
+1
+
+
+// here we used stream which uses async* which is similar to the async in futures and here we made a countdown that prints the numbers from 5 to 1 with a 1 second each .
+//we also listen() in the main() , and it is used to print the contents from the stream .
